@@ -1,4 +1,5 @@
 import { passport } from "../config/passport.js";
+import 'dotenv/config';
 
 function authEmail(req,res,next) {
   passport.authenticate("local", (err, user, info) => {

@@ -1,9 +1,12 @@
 import bcrypt from "bcrypt";
+import 'dotenv/config';
 import jwt from "jsonwebtoken";
 import { cookieOptions } from "../config/options.js";
 import {
-  createUserWithoutRole, retrieveUserByEmail, retrieveUserByOTP,
-  retrieveUserByToken, updateRefreshToken, removeOneTimePassword
+  createUserWithoutRole,
+  removeOneTimePassword,
+  retrieveUserByEmail, retrieveUserByOTP,
+  retrieveUserByToken, updateRefreshToken
 } from "./prisma_auth.js";
 
 async function register(req, res, next) {

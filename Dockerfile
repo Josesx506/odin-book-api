@@ -1,5 +1,5 @@
 # Use official Node 20 image
-FROM node:20
+FROM node:23
 
 # Upgrade npm to version 10
 RUN npm install -g npm@10

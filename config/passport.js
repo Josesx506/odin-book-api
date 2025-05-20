@@ -62,9 +62,9 @@ async function verifyGitHubOAuthCallback(accessToken, refreshToken, profile, don
       profile.emails = [{value: email}]
     }
     
-    if (typeof crypto.randomUUID !== 'function') {
-      console.warn('Warning: crypto.randomUUID() is not available. Please use Node.js v16 or higher.');
-    }
+    // if (typeof crypto.randomUUID !== 'function') {
+    //   console.warn('Warning: crypto.randomUUID() is not available. Please use Node.js v16 or higher.');
+    // }
 
     profile.otp = crypto.randomUUID().replace(/-/g,'');
 

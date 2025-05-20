@@ -3,7 +3,7 @@ import 'dotenv/config';
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://odin-book-client-three.vercel.app/'
+  'https://odin-book-client-three.vercel.app'
 ]
 
 const cookieOptions = {

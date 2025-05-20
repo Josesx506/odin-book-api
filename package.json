@@ -4,7 +4,7 @@
   "description": "Backend express server for odin capstone social media project",
   "main": "index.js",
   "engines": {
-    "node": "23.6.1",
+    "node": "23.x",
     "npm": "10.x"
   },
   "scripts": {
@@ -23,7 +23,6 @@
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "crypto": "^1.0.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
